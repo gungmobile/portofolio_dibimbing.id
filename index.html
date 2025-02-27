@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dpuja Travel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...mX+w=="
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="index.js"></script>
+</head>
+<body>
+
+<style>
+*{
+	font-family:sans-serif;
+	}
+#gridf{
+  font-size: 22px;
+}
+
+.bg1{
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  url(img/hd3.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.bg1color{
+  transition: all 0.5s;
+  background-color: #001E3C;
+  border-bottom: 1px solid #001E3C;
+  
+
+}
+font .login:hover{
+  color: #FFF;
+}
+#myBtn {
+  display: none;
+  position:fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: #001E3C;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+
+.judul h2::before{
+	content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+	}
+.judul h2{
+	font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #213b52;
+	text-align:center;
+}
+.judul h2::after{
+	content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #fdc134;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  .judul2 h2::before{
+	content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+	}
+.judul2 h2{
+	font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #FFF;
+	text-align:center;
+}
+.judul2 h2::after{
+	content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #fdc134;
+    bottom: 0;
+    left: calc(50% - 20px);}
+  
+
+#logod{
+  padding-left: 8%;
+  padding-right:8%;
+  font-size: 30px;
+  font-weight: 1000;
+  font-family: courier;
+  color :#FFFF00;
+}
+#logod #fontl{
+  font-size: 30px;
+  font-weight: 1000;
+  font-family: courier;
+  color :#FFFF00
+}
+#loginnav{
+  border-radius: 50px;
+  width: 100px;
+}
+#sambutan{
+  font-size: 500px;
+  font-weight: 1000;
+  font-family: courier;
+  margin-bottom: 40vh;
+  border: 5px solid lightgrey ;
+  border-radius: 30px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 20px 15px 10px black;
+  
+  
+}
+#fontw{
+  font-size: 28px;
+  font-weight: 900;
+  color: #001E3C;
+  
+}
+#whyimg{
+  height: 100px;
+  width: 100px;
+}
+#whytext{
+  text-align: justify;
+  font-size: 18px;
+}
+.login{
+  color:#000;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #fdc134;
+  border: 2px solid #fdc134;
+  border-radius: 50px;
+  padding: 4px 25px 6px 25px;
+  text-align: center;
+}
+.login:hover{
+  color: #FFF;
+}
+#ftgrid{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.imgpro{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  filter: brightness(50%);
+}
+#imgtxt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#FFF;
+  font-size: 3rem;
+  font-weight: 500;
+  
+}
+.col-lg img{
+  border-radius: 10px;
+}
+.jarakgmbr{
+  padding: 2%;
+}
+.bordergmbr{
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.judulcard{
+  color: #001E3C;
+}
+.paket h2{
+	font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #213b52;
+	text-align:center;
+  padding-top: 25px;
+}
+.harga{
+	font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #213b52;
+	text-align:center;
+	padding-top:0px;
+	
+	}
+.judulsv{
+  font-weight: 900;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-bottom: 5px solid #CCC;
+  color: #001E3C;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+.judulsv:hover{
+  Border-bottom: 5px solid #fdc134 ;
+  cursor: pointer;
+}
+.card-title{
+  color: #001E3C;
+  font-weight: 500;
+}
+#judula{
+  font-size: 35px;
+  font-weight: 500;
+}
+.btn-outline-warning{
+  color:black;
+  background-color:#fdc134;
+}
+.btn-outline-warning:hover{
+color: #FFF;
+}
+.image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(5, 5, 5, 0.7);
+            opacity: 0;
+            transition: all .5s ease-in;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .overlay span {
+            text-align: center;
+        }
+
+
+        ul { list-style: none; }
+ul>li>a {
+color: white;
+text-decoration: none;
+line-height: 1.8;
+}
+ul>li>a:hover,
+a:hover{
+color: #fdc134;
+font-weight: 500;
+}
+
+.col-heading {
+display: block;
+font-size: 2rem;
+text-transform: uppercase;
+color:#fdc134;
+font-weight: 500;
+margin: 1rem 0;
+padding: .4rem 0px;
+border-bottom: 1px solid #c7c7c7; 
+letter-spacing: 3px;
+}
+
+.fa {
+color: #304f50;
+margin-right: 10px;
+font-size:18px;
+width:2.25rem;
+}
+
+#bottom-footer {
+background-color:#001E3C;
+color:white;
+margin-top: 2rem;
+padding-top: .3rem;
+}
+
+
+
+@media screen and (max-width:991.5px){
+  nav{
+    background-color: #001E3C;
+    position: fixed;
+  }
+  
+  
+  #logod{
+    padding: 0px;
+  }
+  #loginnav{
+    width: 100%;
+    border-radius: 50px;
+  }
+#gridf{
+  font-size: 17px;
+}
+  
+}
+@media screen and (min-width:280px){
+  #logod #fontl{
+    font-size: 25px;
+    font-weight: 1000;
+  }
+
+}
+@media screen and (min-width:280px){
+  #sambutan{
+    font-size: 30px;
+    margin-bottom: 35vh;
+  }
+}
+@media screen and (min-width:576px){
+  #ftgrid{
+    height: 100%;
+    
+  }
+  #fontw{
+    font-size: 24px;
+    font-weight:900 ;
+  }
+  #whytext{
+  text-align: justify;
+  font-size: 16px;
+}
+
+   
+  
+}
+@media screen and (max-width:767.5px){
+  #fontw{
+    font-size: 24px;
+    font-weight:900 ;
+  }
+  #whytext{
+  text-align: justify;
+  font-size: 16px;
+}
+#imgtxt{
+  font-size: 1.8rem;
+}
+
+}
+@media screen and (min-width:992px){
+  #fontw{
+    font-size: 23px;
+    font-weight: 900;
+  }
+
+}
+@media screen and (max-width:1027px){
+  #fontw{
+    font-size: 23px;
+    font-weight: 900;
+  }
+
+}
+@media screen and (min-width:991.5px){
+  .nav-link{
+  transition: all 0.2s;
+}
+.nav-link:hover{
+  border-bottom: 5px solid #fdc134;
+}
+nav ul li{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+#logod{
+  letter-spacing: 3px;
+}
+#myBtn:hover {
+  background-color: #0F0;
+}
+
+}
+
+
+  
+
+
+</style>
+
+<!--tombolup-->
+<button onclick="topFunction()" id="myBtn"><i class="material-icons" style="font-size:20px;color:white">keyboard_arrow_up</i></button>
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!--tombolup-->
+
+
+<div class="bg1">
+  
+<!--Navbar-->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark   fixed-top  " style="color: #FFF;">
+  <div class="container-fluid">
+    <a id="logod"  class="navbar-brand" href="index.html"><font id="fontl">DPUJA TRAVEL</font></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto ">
+        <li class="nav-item"  >
+          <a class="nav-link active" href="index.html"><font  style="  font-size:14px;">Home</font></a>
+        </li>
+        <li class="nav-item"  >
+          <a class="nav-link" href="#about"><font style="  font-size:14px;">About</font></a>
+        </li>
+        <li class="nav-item"  >
+          <a class="nav-link" href="#service"><font style="  font-size:14px;">Service</font></a>
+        </li>
+        <li class="nav-item"  >
+          <a class="nav-link" href="#gfoto"><font style="  font-size:14px;">Gallery Foto</font></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Package</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#paket1"> Bronze</a></li>
+            <li><a class="dropdown-item" href="#paket2"> Silver</a></li>
+            <li><a class="dropdown-item" href="#paket3"> Gold</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+       <div class="d-grid">
+        <a  class="login" href="login.html">Login</a>
+        </div>
+      
+      	
+      
+    </div>
+  </div>
+  
+</nav>
+<div id="sambutan" class="carousel-caption">
+  Explore the World with Us
+
+  
+</div>
+</div>
+<!--end Navbar-->
+</div>
+
+
+<!--About-->
+<div class="container-fluid" style="background-color: #1a2e40; padding: 10px;">
+
+<div class="container" style="padding: 10px; background-color: white; border-radius: 10px; margin-top: -80px; box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 0.7);">
+  <div id="about" class="judul">
+    <h2>About</h2>
+    </div>
+    <div class="row"> 
+      <div class="col-lg-6 ">
+        <img width="100%" src="img/hd3.png" alt="">
+      </div>
+      <div class="col-lg-6 ">
+       <p style="font-size: 28px; font-weight: 600;">Selamat datang di <span style="color: #fdc134; letter-spacing: 2px;">Dpuja Travel</span></p>
+        <p style="text-align: justify;">Dpuja Travel adalah sebuah website travel yang didedikasikan untuk memberikan pengalaman perjalanan yang tak terlupakan bagi para pelancong. Kami mengerti bahwa perjalanan adalah tentang menciptakan kenangan indah, menjelajahi tempat-tempat baru, dan menikmati liburan dengan penuh kebahagiaan. Dengan semangat itulah kami hadir untuk memberikan layanan yang terbaik untuk setiap perjalanan Anda.
+
+Layanan yang kami tawarkan mencakup tiga aspek utama perjalanan, yaitu transportasi, panduan, dan akomodasi.</br></br>
+Selain itu, kami juga menawarkan paket perjalanan yang dirancang khusus untuk memenuhi preferensi dan anggaran Anda. Dengan paket-paket ini, Anda dapat menjelajahi destinasi populer dengan pemandu wisata berpengalaman dan menikmati fasilitas yang nyaman dengan harga yang kompetitif.<br><br>
+Dpuja Travel berkomitmen untuk memberikan pengalaman perjalanan yang tak terlupakan kepada setiap pelanggan kami. Tim kami yang profesional dan ramah siap membantu Anda merencanakan perjalanan impian Anda dan memberikan dukungan selama perjalanan berlangsung.
+</p>
+      </div>
+    </div>
+  </div>
+  </div>
+<!--aboutend-->
+
+<!--paket-->
+<div class="containeri-fluid" >
+
+  <div class="container">
+    <!--Judul Start-->
+<div id="desti" class="judul">
+  <h2>DESTINATION</h2>
+  </div>
+    <div class="row">
+      <div class="col-lg-3 bg-white">
+        <div class="card" style="width:100%; box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.4) ;">
+          <img class="card-img-top" src="img/des1.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Lempuyang</h4>
+            <p class="card-text">Penataran Agung Lempuyang Temple in Karangasem Regency, is now a tourist destination that is quite popular and hits for tourists.</p>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#lempuyang">
+              Order Now
+            </button>
+        
+          <!-- The Modal -->
+          <div class="modal" id="lempuyang">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+        
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="paket"><h2>ORDER FORM</h2></div>
+                  <div class="form">
+                    <!-- startform -->
+               <div class="container mt-3">
+                 <form action="sumbit.html">
+                   <div class="mb-3 mt-3">
+                     <label for="email">Email:</label>
+                     <input type="email" class="form-control" id="email" placeholder=" Email" name="email">
+                   </div>
+                   <div class="mb-3">
+                     <label for="hp">No Handphone:</label>
+                     <input type="number" class="form-control" id="pwd" placeholder="No Handphone" name="no">
+                   </div>
+                   <div class="form-check mb-3">
+                     <label class="form-check-label">
+                       <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                     </label>
+                   </div>
+                  <button style="margin-bottom:10px;" type="submit" class="btn btn-primary">Submit</button>
+                  <button style="margin-bottom:10px;" type="reset" class="btn btn-primary">Cancel</button>
+                 </form>
+                 <!-- Modal footer -->
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                     </div>
+                 
+               </div>
+               <!-- endform -->
+               
+                    </div>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+ 
+          </div>
+      </div><br/>
+    </div>
+
+
+
+    <div class="col-lg-3 bg-white text-black">
+        <div class="card" style="width:100%;box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.4) ;">
+          <img class="card-img-top" src="img/des2.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Tukad Cepung </h4>
+            <p class="card-text">The existence of this Tukad Cepung waterfall has become a tourist destination other than the beach which is quite popular on Bali Island.</p>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#lempuyang">
+              Order Now
+            </button>
+        
+          <!-- The Modal -->
+          <div class="modal" id="lempuyang">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+        
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="paket"><h2>ORDER FORM</h2></div>
+                  <div class="form">
+                    <!-- startform -->
+               <div class="container mt-3">
+                 <form action="sumbit.html">
+                   <div class="mb-3 mt-3">
+                     <label for="email">Email:</label>
+                     <input type="email" class="form-control" id="email" placeholder=" Email" name="email">
+                   </div>
+                   <div class="mb-3">
+                     <label for="hp">No Handphone:</label>
+                     <input type="number" class="form-control" id="pwd" placeholder="No Handphone" name="no">
+                   </div>
+                   <div class="form-check mb-3">
+                     <label class="form-check-label">
+                       <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                     </label>
+                   </div>
+                  <button style="margin-bottom:10px;" type="submit" class="btn btn-primary">Submit</button>
+                  <button style="margin-bottom:10px;" type="reset" class="btn btn-primary">Cancel</button>
+                 </form>
+                 <!-- Modal footer -->
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                     </div>
+                 
+               </div>
+               <!-- endform -->
+               
+                    </div>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          </div>
+      </div><br/>
+    </div>
+    <div class="col-lg-3 bg-white text-black">
+        <div class="card" style="width:100%;box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.4) ;">
+          <img class="card-img-top" src="img/des3.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Bali Zoo Park</h4>
+            <p class="card-text">But the zoo in the midst of extensive gardens and tropical trees become a special place for tours and fills your holiday activities with family. </p>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#lempuyang">
+              Order Now
+            </button>
+        
+          <!-- The Modal -->
+          <div class="modal" id="lempuyang">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+        
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="paket"><h2>ORDER FORM</h2></div>
+                  <div class="form">
+                    <!-- startform -->
+               <div class="container mt-3">
+                 <form action="sumbit.html">
+                   <div class="mb-3 mt-3">
+                     <label for="email">Email:</label>
+                     <input type="email" class="form-control" id="email" placeholder=" Email" name="email">
+                   </div>
+                   <div class="mb-3">
+                     <label for="hp">No Handphone:</label>
+                     <input type="number" class="form-control" id="pwd" placeholder="No Handphone" name="no">
+                   </div>
+                   <div class="form-check mb-3">
+                     <label class="form-check-label">
+                       <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                     </label>
+                   </div>
+                  <button style="margin-bottom:10px;" type="submit" class="btn btn-primary">Submit</button>
+                  <button style="margin-bottom:10px;" type="reset" class="btn btn-primary">Cancel</button>
+                 </form>
+                 <!-- Modal footer -->
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                     </div>
+                 
+               </div>
+               <!-- endform -->
+               
+                    </div>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          </div>
+      </div><br/>
+    </div>
+    <div class="col-lg-3 bg-white text-black">
+        <div class="card" style="width:100%; box-shadow:5px 5px 5px 1px rgba(0,0,0,0.4)  ;">
+          <img class="card-img-top" src="img/des4.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title judulcard">GWK Statue</h4>
+            <p class="card-text">This tourist spot in the South Bali area is a mandatory tour destination for those who vacation to the island of the Gods, Bali.</p>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#lempuyang">
+              Order Now
+            </button>
+        
+          <!-- The Modal -->
+          <div class="modal" id="lempuyang">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+        
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="paket"><h2>ORDER FORM</h2></div>
+                  <div class="form">
+                    <!-- startform -->
+               <div class="container mt-3">
+                 <form action="sumbit.html">
+                   <div class="mb-3 mt-3">
+                     <label for="email">Email:</label>
+                     <input type="email" class="form-control" id="email" placeholder=" Email" name="email">
+                   </div>
+                   <div class="mb-3">
+                     <label for="hp">No Handphone:</label>
+                     <input type="number" class="form-control" id="pwd" placeholder="No Handphone" name="no">
+                   </div>
+                   <div class="form-check mb-3">
+                     <label class="form-check-label">
+                       <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                     </label>
+                   </div>
+                  <button style="margin-bottom:10px;" type="submit" class="btn btn-primary">Submit</button>
+                  <button style="margin-bottom:10px;" type="reset" class="btn btn-primary">Cancel</button>
+                 </form>
+                 <!-- Modal footer -->
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                     </div>
+                 
+               </div>
+               <!-- endform -->
+               
+                    </div>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          </div>
+      </div><br/>
+    </div>
+
+
+
+
+
+
+  </div>
+</div>
+<!--paket-->
+  
+  
+
+  
+
+
+<!--service-->
+<div class="container-fluid mt-3" style="background-color: #213b52;">
+  <div id="service" class="judul">
+    <h2 style="color:#FFF; padding-top:50px; margin-top:50px;">SERVICE</h2>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+          <div class="card-body" style="padding: 10%;">
+            
+            <i class="fa fa-bus" style="font-size: 60px; color: #52565e;"></i><br><br>
+            <div style="width: 150px;"><h2 class="judulsv">Transportasi</h2></div>
+            <font style="text-align: justify;">Dengan layanan transportasi kami, Anda dapat merencanakan perjalanan Anda dengan lebih mudah dan efisien tanpa harus khawatir dengan masalah transportasi.</font>
+
+          </div> 
+          
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+          <div class="card-body" style="padding: 10%;">
+            
+            <i class="fa fa-map-marker" style="font-size: 60px; color: #52565e;"></i><br><br>
+            <div style="width: 150px;"><h2 class="judulsv"> Panduan </h2></div>
+            <font style="text-align: justify;">Dengan menggunakan layanan panduan wisata kami, Anda  mendapatkan manfaat berupa pengetahuan yang lebih luas dan mendalam tentang destinasi yang dikunjungi.</font>
+
+          </div> 
+          
+        </div>
+      </div>
+      <div class="col-lg-4">
+         
+        <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+          <div class="card-body" style="padding: 10%;">
+            
+            <i class="fa fa-hotel" style="font-size: 60px; color: #52565e;"></i><br><br>
+            <div style="width: 150px;"><h2 class="judulsv">Hotel & Villa</h2></div>
+            <font style="text-align: justify;">Kami bekerja sama dengan berbagai hotel dan penginapan yang memiliki reputasi yang baik dan terjamin kualitasnya, sehingga Anda dapat memilih akomodasi dengan tenang.</font>
+
+          </div> 
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--service end-->
+
+<!--containergf-->
+<div class="container-fluid" >
+  <!--BatasJudul-->
+  <div id="gfoto" class="judul">
+  <h2>GALERY FOTO</h2>
+  </div>
+  <!--BatasJudul-->
+  <!--galeryfoto1-->
+      <div class="container-fluid">
+        <div class="container">
+      <div class="row">
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f1.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Paris</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f2.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Japan</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f3.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Bali</span>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+  <!--galeryfoto1--->
+  
+  <!--galeryfoto2-->
+      <div class="row">
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f4.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Jawa Timur</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f5.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Bali</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f6.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Paris</span>
+            </div>
+        </div>
+        </div>
+      </div>  
+    
+  <!--galeryfoto2--->
+  
+  <!--galeryfoto3-->
+      <div class="row">
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f7.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Bali</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f8.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Japan</span>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg p-3">
+          <div class="image-container">
+            <img src="img/f9.jpg" width="100%" height="auto" alt="Image">
+            <div class="overlay">
+                <span>Japan</span>
+            </div>
+        </div>
+        </div>
+      </div>  
+  
+  <!--galeryfoto3--->
+</div>
+</div>
+  <!--containergf--><br>
+</div>
+
+
+<!--startpaket-->
+<div class="container-fluid mt-3" style="background-color:#1a2e40;">
+  <div class="container">
+  <!--paketwisata-->
+<div class="judul">
+<h2 style="color:#FFF; padding-top:50px; margin-top:80px;">TRAVEL PACKAGES</h2>
+</div>
+<!--paketwisata-->
+    <div class="row">
+      <div class="col-lg-4 p-3">
+      	<!--startcard-->
+        <div class="container mt-3">
+  <div class="card">
+    <div class="card-header"><div id="paket1" class="paket"><h2> BRONZE</h2></div></div>
+    <div align="center" class="card-body"><img src="img/m1.jpg" width="70%"> <div class="harga">RP. 2.999.999 / TRIP</div></div> 
+    <div class="card-footer">
+    <!--startmodal-->
+
+<div align="center" class="container mt-3">
+  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#bronze">
+    Order Now
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="bronze">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+      <div align="center" class="modal-body">
+        <div class="paket"><h2> BRONZE</h2></div>
+      </div>
+     <div class="form">
+     <!-- startform -->
+<div class="container mt-3">
+  <form action="sumbit.html">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder=" Email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="hp">No Handphone:</label>
+      <input type="number" class="form-control" id="pwd" placeholder="No Handphone" name="no">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+   <button style="margin-bottom:10px;" type="submit" class="btn btn-primary">Submit</button>
+   <button style="margin-bottom:10px;" type="reset" class="btn btn-primary">Cancel</button>
+  </form>
+  <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+  
+</div>
+<!-- endform -->
+
+     </div>
+
+    </div>
+  </div>
+</div>
+<!--endmodal-->
+    </div>
+  </div>
+</div>
+        <!--endcard---->
+      </div>
+      <div class="col-lg-4 p-3">
+      <!--startcard-->
+        <div class="container mt-3">
+  <div class="card">
+    <div class="card-header"><div id="paket2" class="paket"><h2> SILVER</h2></div></div>
+    <div align="center" class="card-body"><img src="img/m2.jpg" width="70%"> <div class="harga">RP. 4.999.999 / TRIP</div></div> 
+    <div class="card-footer">
+    <!--startmodal-->
+
+<div align="center" class="container mt-3">
+  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#silver">
+    Order Now
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="silver">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+      <div align="center" class="modal-body">
+        <div class="paket"><h2> SILVER</h2></div>
+      </div>
+     <div class="form">
+     <!-- startform -->
+<div class="container mt-3">
+  <form action="sumbit.html">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder=" Email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="hp">No Handphone:</label>
+      <input type="number" class="form-control" id="pwd" placeholder="No Handphone" name="no">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+   <button style="margin-bottom:10px;" type="submit" class="btn btn-primary">Submit</button>
+   <button style="margin-bottom:10px;" type="reset" class="btn btn-primary">Cancel</button>
+  </form>
+  <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+  
+</div>
+<!-- endform -->
+
+     </div>
+
+    </div>
+  </div>
+</div>
+<!--endmodal-->
+    </div>
+  </div>
+</div>
+        <!--endcard---->
+      </div>
+      <div class="col-lg-4 p-3">
+      <!--startcard-->
+        <div class="container mt-3">
+  <div class="card">
+    <div class="card-header"><div  id="paket3"class="paket"><h2> GOLD</h2></div></div>
+    <div align="center" class="card-body"><img src="img/m3.jpg" width="70%"> <div class="harga">RP. 6.999.999 / TRIP</div></div> 
+    <div class="card-footer">
+    <!--startmodal-->
+
+<div align="center" class="container mt-3">
+  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#gold">
+    Order Now
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="gold">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+      <div align="center" class="modal-body">
+        <div class="paket"><h2> GOLD</h2></div>
+      </div>
+     <div class="form">
+     <!-- startform -->
+<div class="container mt-3">
+  <form action="sumbit.html">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder=" Email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="hp">No Handphone:</label>
+      <input type="number" class="form-control" id="pwd" placeholder="No Handphone" name="no">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+   <button style="margin-bottom:10px;" type="submit" class="btn btn-primary">Submit</button>
+   <button style="margin-bottom:10px;" type="reset" class="btn btn-primary">Cancel</button>
+  </form>
+  <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+  
+</div>
+<!-- endform -->
+
+     </div>
+
+    </div>
+  </div>
+</div>
+<!--endmodal-->
+    </div>
+  </div>
+</div>
+        <!--endcard---->
+      </div>
+    </div>  
+  </div>
+</div>
+<!---endpaket--->
+
+
+<!--why strat-->
+
+<!--why1 start-->
+<div id="whyt"class="container-fluid mt-3">
+  <!--Judul Start-->
+  <div id="about" class="judul">
+  <h2>WHY DPUJA TRAVEL</h2>
+  </div>
+  <!--Judul End-->
+  <div class="container" style="padding-bottom: 30px;">
+    <div class="row">
+      <div class="col-lg-4">
+        
+          <div id="isiwhy" class="card" style="justify-content: center; border: none;" >
+           <center> <img  id="whyimg" src="img/why1.png"></center><br/>
+           <center><font id="fontw">Bantuan Staff Lokal</font></center>
+           <p id="whytext" >Kami memiliki staff lokal yang sangat berpengalaman yang siap melayani keperluan perjalanan Anda dari rekomendasi perjalanan, informasi destinasi, hingga reservasi.</p>
+          </div>
+        
+      </div>
+      <div class="col-lg-4">
+        
+          <div class="card" style="justify-content: center; border: none;">
+           <center> <img id="whyimg"  src="img/why2.png" ></center><br/>
+           <center><font id="fontw">Kemudahan perjalanan</font></center>
+           <p id="whytext" >Kami menyediakan berbagai macam paket tour, optional tour, tiket pesawat, hotel, theme park, transportasi, serta pengurusan visa untuk mendukung kemudahan perjalanan Anda.</p>
+          </div>
+        
+      </div>
+      <div class="col-lg-4">
+       
+          <div class="card" style="justify-content: center; border: none;">
+           <center> <img id="whyimg"  src="img/why3.png"></center><br/>
+           <center><font id="fontw">Aman dan Terpercaya</font></center>
+           <p id="whytext" >Dpuja Travel merupakan salah satu agen travel terbaik di Jepang yang melayani lebih dari 30 tahun dan tersebar di 63 negara. Semua transaksi di Dpuja Travel dijamin aman.</p>
+          </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--why1end-->
+<!--why end-->
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel " style="background-color: #1a2e40; padding-bottom: 50px;">
+  <div class="judul">
+    <h2 style="color:#FFF; padding-top:50px; margin-top:80px;">TESTIMONI</h2>
+    </div>
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators" style=" margin-top: 100px;">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!--startcard1-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Dpuja Travel membuat liburan saya sangat mudah dan menyenangkan. Terima kasih atas layanan yang sangat baik.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Saya sangat merekomendasikan Dpuja Travel untuk perjalanan Anda. Mereka sangat profesional dan membantu.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Semuanya disiapkan dengan sangat baik oleh Dpuja Travel. Saya sangat senang dengan pengalaman liburan saya.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      <!--endcard1-->
+    </div>
+    <div class="carousel-item">
+      <!--startcard2-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Dpuja Travel memberikan pengalaman perjalanan yang luar biasa. Saya sangat puas dengan layanan mereka.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Dengan bantuan Dpuja Travel, perjalanan saya menjadi sangat mudah dan terorganisir dengan baik.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Dpuja Travel memberikan layanan yang sangat responsif dan membantu dalam merencanakan liburan saya.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      <!--endcard2-->
+    </div>
+    <div class="carousel-item">
+      <!--startcard3-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Saya sangat senang dengan pelayanan yang diberikan oleh Dpuja Travel. Semuanya terorganisir dengan sangat baik.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Dpuja Travel membuat perjalanan saya menjadi sangat menyenangkan dan tidak ada kendala sama sekali.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="margin-top: 5%; margin-bottom: 5%;">
+              <div class="card-body" style="padding: 10%;">
+                
+                <i class="fas fa-user" style="font-size: 60px; color: #52565e;"></i><br><br>
+                <div style="width: 150px;"><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i><i class="fas fa-star fa-lg text-warning"></i></div>
+                <font style="text-align: justify;">Saya  akan merekomendasikan Dpuja Travel pada orang dekat saya. Mereka memberikan pengalaman perjalanan  luar biasa.</font>
+    
+              </div> 
+              
+            </div>
+          </div>
+          </div>
+        </div>
+      <!--endcard3-->
+    </div>
+  </div>
+
+  
+</div>
+
+
+ <!--travel post start-->
+  <!--Judul Start-->
+  <div class="judul">
+    <h2>Travel Blog</h2>
+    </div>
+    <!--Judul End-->
+    
+    <!--grid1-->
+  <div class="container mt-3">
+    <div class="container-fluid">
+      <div class="row" style=" border:2px solid #000; border-radius:8px; margin-top:15px;">
+        <div class="col-lg-5 text-black">
+          <center><img id="ftgrid" src="img/g5.jpg" width="100%" height="350px" /></center>
+        </div>
+        <div class="col-lg-7  text-black" align="left" style="padding-top:15px;" >
+          <button style="margin-left:10px; border:0px; padding-left:0px; padding-bottom:0px; color:#006699" type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#myModal1"><h3 style="color: #001E3C;">PANTAI PANDAWA BALI</h3></button>
+          <table>
+        <td><i class="material-icons" style="font-size:20px">date_range</i></td>
+        <td><font size="2">Rabu,08-02-2023.</font></td>
+        </table>
+       
+       <p id="gridf" align="justify">
+        Bali punya banyak pantai indah yang jadi incaran utama wisatawan, salah satunya Pantai Pandawa. Tapi, ternyata pantai ini dulunya merupakan pantai rahasia.
+  Pantai Pandawa terletak di Desa Kutuh, Kecamatan Kuta Selatan, Kabupaten Badung. Pantai ini berjarak sekitar 3 km dari kawasan wisata Nusa Dua dan Pura Uluwatu. Sedangkan dari Bandara Internasional Ngurah Rai jaraknya sekitar 18 km...
+  
+  
+       </p>
+       <!--modal batas-->
+       <div class="container mt-3">
+    
+    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal1" style=" float:left; margin-bottom:7px;">
+      Read More
+    </button>
+  </div>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+         <img src="img/g5.jpg" width="100%"/>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h2>PANTAI PANDAWA BALI</h2>
+          <table>
+            <td><i class="material-icons" style="font-size:20px">date_range</i></td>
+            <td><font size="2">Rabu,08-02-2023.</font></td>
+            </table>
+       <p align="justify">
+       Bali punya banyak pantai indah yang jadi incaran utama wisatawan, salah satunya Pantai Pandawa. Tapi, ternyata pantai ini dulunya merupakan pantai rahasia. <br><br>
+  Pantai Pandawa terletak di Desa Kutuh, Kecamatan Kuta Selatan, Kabupaten Badung. Pantai ini berjarak sekitar 3 km dari kawasan wisata Nusa Dua dan Pura Uluwatu. Sedangkan dari Bandara Internasional Ngurah Rai jaraknya sekitar 18 km. <br><br>
+  
+  Akses ke Pantai Pandawa relatif mudah dan tak terlalu jauh. Dari Bandara Ngurah Rai dan Kota Denpasar, pantai ini dapat ditempuh selama sekitar 1 jam perjalanan menggunakan kendaraan bermotor. Dari Denpasar, traveler dapat menuju pantai ini menggunakan jalur tol Bali Mandara. <br><br>
+  
+  
+  Pantai Pandawa menawarkan pemandangan alam yang bersih nan mempesona. Dulunya, pantai ini merupakan pantai rahasia. Karena lokasinya yang tersembunyi di balik bukit berbatu. <br><br>
+  
+  Pantai Pandawa di Badung. Setelah dibuatkan akses jalan yang memecah bukit kapur, Pantai Pandawa tak lagi tersembunyi. Kini pantai ini dapat dengan mudah dikunjungi oleh siapapun.<br><br>
+  
+  Pantai Pandawa memiliki segudang pesona. Hal pertama yang akan traveler temui saat berkunjung ke pantai ini adalah ukiran enam patung yang berada di dinding tebing batu kapur.<br><br>
+  
+  Keenam patung tersebut merupakan patung penggambaran Ksatria Pandawa (Arjuna, Bima, Yudistira, Nakula, dan Sadewa) serta sang ibu, yaitu Dewi Kunti. Patung setinggi 5 meter ini dipercaya sebagai penjaga dari Pantai Pandawa untuk melindungi pantai dan sekitarnya dari marabahaya.<br><br>
+  
+  Kemudian setelah tiba di dalam area pantai, traveler akan disuguhi oleh pemandangan pasir yang bersih serta air laut yang sangat jernih. Di sini traveler bisa bermain air maupun bersantai dengan berjemur di tepi pantai.<br><br>
+  
+  
+  Selain menikmati pemandangan, pantai ini juga menyediakan beragam aktivitas seru lainnya. Traveler bisa mengelilingi pantai menggunakan kano, menikmati pantai dari udara dengan bermain paralayang dari atas Bukit Timbis, bermain motor trail, hingga bermain air di Air Terjun Pantai Gunung Payung yang airnya tumpah ke pantai.<br><br>
+  
+  Tidak hanya itu, di Pantai Pandawa traveler juga dapat mengamati proses budidaya rumput laut yang dilakukan para petani rumput laut setempat. Budidaya ini dapat traveler temui di sisi barat pantai.<br><br>
+  
+  Untuk menikmati berbagai pesona yang ditawarkan Pantai Pandawa, traveler perlu membayar tiket masuk serta tiket permainan yang akan diikuti. Tiket masuk ke pantai ini sangat terjangkau. Berikut harga tiket masuknya:<br><br>
+  
+  Wisatawan domestik: Rp 8.000<br>
+  Wisatawan mancanegara: Rp 15.000<br>
+  Parkir motor: Rp 2.000<br>
+  Parkir mobil: Rp 5.000
+  
+  
+  
+  
+  
+  
+  
+       </p>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+       <!--modal batas-->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--Batasgrid1-->
+  <!--grid2-->
+  <div class="container mt-3" style="padding-bottom: 30px;">
+    <div class="container-fluid">
+      <div class="row" style=" border:2px solid #000; border-radius:8px; margin-top:15px;">
+        <div class="col-lg-5  text-black">
+          <center><img id="ftgrid" src="img/g6.jpg" width="100%" height="350px"   /></center>
+        </div>
+        <div class=" col-lg-7  text-black" align="left" style="padding-top:15px;" >
+          <button style="margin-left:10px; border:0px; padding-left:0px; padding-bottom:0px; color:#006699" type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2"><h3 style="color: #001E3C;">PURA TANAH LOT</h3></button>
+          <table>
+            <td><i class="material-icons" style="font-size:20px">date_range</i></td>
+            <td><font size="2">Rabu,08-02-2023.</font></td>
+            </table>
+       
+       <p id="gridf" align="justify" >
+       Pura Tanah Lot yang terletak di sisi pantai pedesaan Beraban, Kecamatan Kediri, Kabupaten Tabanan. Tanah Lot yang terdiri dari dua kata, yang kata Tanah ditafsirkan sebagai karang tampak seperti gili atau pulau. Lot atau kata Lod memiliki makna laut. Jadi Tanah Lot yang berarti pulau kecil mengambang di laut. Lokasi yang sekarang disebut sebagai Tanah Lot telah telah digunakan pada periode Meg...
+       </p>
+       <!--modal batas-->
+       <div class="container mt-3">
+    
+    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal2" style="float:left; margin-bottom:7px;">
+      Read More
+    </button>
+  </div>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal2">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+         <img src="img/g6.jpg" width="100%"/>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h2>PURA TANAH LOT</h2>
+          <table>
+            <td><i class="material-icons" style="font-size:20px">date_range</i></td>
+            <td><font size="2">Rabu,08-02-2023.</font></td>
+            </table>
+       <p align="justify">
+       Pura Tanah Lot yang terletak di sisi pantai pedesaan Beraban, Kecamatan Kediri, Kabupaten Tabanan. Tanah Lot yang terdiri dari dua kata, yang kata Tanah ditafsirkan sebagai karang tampak seperti gili atau pulau. Lot atau kata Lod memiliki makna laut. Jadi Tanah Lot yang berarti pulau kecil mengambang di laut. Lokasi yang sekarang disebut sebagai Tanah Lot telah digunakan pada periode Megalitik sebagai tempat suci, terbukti dari adanya menhir. Berdasarkan kondisi lingkungan, maka struktur Pura Tanah Lot dibangun di dataran karang teratur sudutnya yang hanya terdiri dari satu halaman polos sebagai Jeroan.<br><br>
+  Pura Tanah Lot terletak di 30 Km di sisi barat Denpasar kota dan sekitar 11 Km di sebelah selatan kota Tabanan. Candi ini dibangun di atas batu dengan ukuran 3 hektar dan dapat dijangkau dalam beberapa menit dengan berjalan kaki, karena hanya 20 meter dari bibir pantai. Candi ini sangat terkenal di antara tujuan wisata di Bali dengan pemandangan spektakuler matahari terbenam. Di beberapa sudut dari terumbu karang di sekitar Pura Tanah Lot terdapat ular jinak yang dipercaya sebagai makhluk yang di keramatkan dan disucikan, ular yang berwarna hitam dan putih di mana menurut masyarakat setempat percaya bahwa sebagai properti dewa dan sebagai penjaga candi dari pengaruh buruk.<br><br>
+  Pura yang dibangun oleh Danghyang Nirartha yang berhasil menguatkan kepercayaan penduduk Bali akan ajaran Hindu dan membangun Sad Kahyangan tersebut pada abad ke-16.<br><br>
+  Odalan atau hari raya di Pura ini diperingati setiap 210 hari sekali, sama seperti pura-pura yang lain. Jatuhnya dekat dengan perayaan Galungan dan Kuningan yaitu tepatnya pada Hari Suci Buda Cemeng Langkir. Saat itu, orang yang sembahyang akan ramai bersembahyang di Pura Ini.<br><br>
+  Fungsi candi ini dapat direalisasikan dari fungsi bangunan candi utama yang terletak di daerah candi utama. Di tempat ini, ada sebuah kuil utama untuk menyembah dewa dalam bentuk Dewa Baruna atau Bhatara Segara, kekuatan laut. Media ibadah untuk dewa ini adalah bangunan candi dengan 5 bertingkat sedangkan bangunan candi bertingkat 3 di bagian utara daerah ini pemaknaan untuk menyembah kepada Dang Hyang Nirartha.<br><br>
+  Candi Tanah Lot dalam rangka untuk mengetahui status Pura Tanah Lot dapat direalisasikan dari sejarah candi, fungsi dan keberadaan pemuja juga masuk berdoa saat upacara di pura ini diselenggarakan. Dalam hal ini dapat diwujudkan sebagai berikut:<br><br>
+  
+  -Candi Tanah Lot sebagai dang Kahyangan (Kuil Suci besar di Bali), karena sejarah dan Penyiwi (Orang-orang merawat candi) adalah dari orang-orang lokal dari Kabupaten Tabanan dan sekitarnya.<br>
+  -Pura Tanah Lot Temple sebagai Segara, karena yang berfungsi sebagai tempat suci untuk menyembah Segara Bhatara, Tuhan dengan manifestasi sebagai Dewa Daya laut.<br>
+  
+  -Hewan yang unik dapat dilihat di daerah candi Tanah Lot ni, adalah ular yang umumnya dapat ditemui di pantai, bagian dari perutnya tidak ada kulit melintang, ular air laut ini sangat berbahaya, tapi kasus gigitan ular sangat jarang terjadi, karena ular air laut umumnya sangat pasif.
+  
+       </p>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+       <!--modal batas-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Batasgrid2-->
+  
+  <!--travel post End-->
+
+
+  <!--foot-->
+  <div class="container-fluid" style="background-color:#1a2e40">
+
+
+    <div class="row  row-no-gutters">
+      <div class="col-xs-12 col-sm-6 col-md-3" >
+        <ul>
+          <li class="col-heading">About</li>
+          <p style="text-align: justify; color: white;">Dpuja Travel adalah sebuah website travel yang didedikasikan untuk memberikan pengalaman perjalanan yang tak terlupakan bagi para pelancong. Kami mengerti bahwa perjalanan adalah tentang menciptakan kenangan indah.</p>
+        </ul>
+      </div>     
+
+      <div class="col-xs-12 col-sm-6 col-md-3" >
+        <ul>
+          <li class="col-heading">Page</li>
+          <li><a href="#index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#gfoto">Gallery</a></li>
+        </ul>
+      </div>      
+
+      
+      <div class="col-xs-12 col-sm-6 col-md-3" >
+        <ul>
+          <li class="col-heading">contact</li>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i><a  href="#index.html">081237015824</a>
+          </li>
+          <li>
+            <i class="fa fa-mobile" aria-hidden="true"></i><a  href="#index.html">081935348638</a>
+          </li>
+          <li>
+             <i class="fa fa-map-marker" aria-hidden="true"></i><a href="#index.html">Jl.Tukad Balian</a>
+          </li> 
+          <li>
+             <i class="fa fa-envelope-square" aria-hidden="true"></i><a href="#index.html">ggungde0@gmail.com</a>  
+          </li> 
+        </ul>
+      </div>   
+      <div class="col-xs-12 col-sm-6 col-md-3" >
+        <ul>
+          <li class="col-heading">Payment</li>
+          <p style="color:white">Nikmati kemudahan pembayaran dengan menggunakan kartu debit, kartu kredit Visa, dan metode pembayaran e-commerce lainnya di website travel kami.</p>
+        </ul>
+      </div>  
+    </div> <!--  end row  -->
+    
+    <div class="row row-no-gutters" id="bottom-footer" >
+      
+      
+      
+      <div class=" container-fluid text-center" >
+        <ul>
+          <li class="small">© Copyright 2023  <a href="#" style="color:white;font-weight:500;">Dpuja</a>. All Rights reserved.</li>
+        </ul>
+      </div>
+    
+
+  </div> <!--  end container-fluid  -->
+  <!--footend-->
+
+  
+</body>
+</html>
+
+
